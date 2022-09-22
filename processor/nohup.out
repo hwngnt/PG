@@ -1,0 +1,401 @@
+Train Epoch: 0, loss: 0.93820
+Val Epoch: 0, val_loss: 1.10019
+Train Accuracy: 0.7291666666909852
+Val Accuracy: 0.7053763440575366
+best model at 1.100188407739858
+Train Epoch: 1, loss: 0.57526
+Val Epoch: 1, val_loss: 0.75063
+Train Accuracy: 0.8276426288751815
+Val Accuracy: 0.7930182198612209
+Train Epoch: 2, loss: 0.40194
+Val Epoch: 2, val_loss: 0.71583
+Train Accuracy: 0.873542261678119
+Val Accuracy: 0.8151881720430108
+Train Epoch: 3, loss: 0.34138
+Val Epoch: 3, val_loss: 0.61759
+Train Accuracy: 0.8902956276511913
+Val Accuracy: 0.8455346475222917
+Train Epoch: 4, loss: 0.30039
+Val Epoch: 4, val_loss: 0.54136
+Train Accuracy: 0.9029010267998918
+Val Accuracy: 0.8523297490754578
+Train Epoch: 5, loss: 0.28023
+Val Epoch: 5, val_loss: 0.53692
+Train Accuracy: 0.9082729838323418
+Val Accuracy: 0.8573850060022006
+Train Epoch: 6, loss: 0.25783
+Val Epoch: 6, val_loss: 0.57072
+Train Accuracy: 0.9143206854345165
+Val Accuracy: 0.8563844085879081
+Train Epoch: 7, loss: 0.25030
+Val Epoch: 7, val_loss: 0.42269
+Train Accuracy: 0.9168409152888901
+Val Accuracy: 0.8712888291659748
+Train Epoch: 8, loss: 0.24243
+Val Epoch: 8, val_loss: 0.65374
+Train Accuracy: 0.9184091527429905
+Val Accuracy: 0.8448850059594732
+Train Epoch: 9, loss: 0.23506
+Val Epoch: 9, val_loss: 0.51812
+Train Accuracy: 0.9217751258152059
+Val Accuracy: 0.8737977896967242
+Train Epoch: 10, loss: 0.22616
+Val Epoch: 10, val_loss: 0.47599
+Train Accuracy: 0.9231351149271868
+Val Accuracy: 0.8758288530750798
+Train Epoch: 11, loss: 0.21543
+Val Epoch: 11, val_loss: 0.60101
+Train Accuracy: 0.927321331445561
+Val Accuracy: 0.8471251493286488
+Train Epoch: 12, loss: 0.21336
+Val Epoch: 12, val_loss: 0.57237
+Train Accuracy: 0.9274743302215707
+Val Accuracy: 0.8534274193833236
+Train Epoch: 13, loss: 0.20805
+Val Epoch: 13, val_loss: 0.59350
+Train Accuracy: 0.9289830681597734
+Val Accuracy: 0.8588037634693451
+Train Epoch: 14, loss: 0.20424
+Val Epoch: 14, val_loss: 0.54611
+Train Accuracy: 0.9298840609437249
+Val Accuracy: 0.8664949223701814
+Train Epoch: 15, loss: 0.20139
+Val Epoch: 15, val_loss: 0.45908
+Train Accuracy: 0.929391064871481
+Val Accuracy: 0.8729017323490539
+Train Epoch: 16, loss: 0.19437
+Val Epoch: 16, val_loss: 0.41436
+Train Accuracy: 0.932374541003672
+Val Accuracy: 0.8776881720430108
+Train Epoch: 17, loss: 0.19324
+Val Epoch: 17, val_loss: 0.44943
+Train Accuracy: 0.933063035495716
+Val Accuracy: 0.8769713261363896
+Train Epoch: 18, loss: 0.18410
+Val Epoch: 18, val_loss: 0.51279
+Train Accuracy: 0.935107269149953
+Val Accuracy: 0.8794952210132366
+Train Epoch: 19, loss: 0.18919
+Val Epoch: 19, val_loss: 0.48683
+Train Accuracy: 0.9325445396517891
+Val Accuracy: 0.8691457586903726
+Train Epoch: 20, loss: 0.18304
+Val Epoch: 20, val_loss: 0.50330
+Train Accuracy: 0.9344952740459138
+Val Accuracy: 0.8730286738636104
+Train Epoch: 21, loss: 0.17718
+Val Epoch: 21, val_loss: 0.49167
+Train Accuracy: 0.9381034952044633
+Val Accuracy: 0.8707511947716151
+Train Epoch: 22, loss: 0.17753
+Val Epoch: 22, val_loss: 0.52766
+Train Accuracy: 0.9366755066040534
+Val Accuracy: 0.8609468339449473
+Train Epoch: 23, loss: 0.17725
+Val Epoch: 23, val_loss: 0.44700
+Train Accuracy: 0.9374022507900999
+Val Accuracy: 0.8810185185470034
+Train Epoch: 24, loss: 0.17530
+Val Epoch: 24, val_loss: 0.55045
+Train Accuracy: 0.9381672446701489
+Val Accuracy: 0.8757168459066211
+Train Epoch: 25, loss: 0.17595
+Val Epoch: 25, val_loss: 0.45910
+Train Accuracy: 0.9380524955881415
+Val Accuracy: 0.8657034050179212
+Train Epoch: 26, loss: 0.16821
+Val Epoch: 26, val_loss: 0.47274
+Train Accuracy: 0.9404452264381885
+Val Accuracy: 0.8768742533140285
+Train Epoch: 27, loss: 0.16868
+Val Epoch: 27, val_loss: 0.47414
+Train Accuracy: 0.9417627159063789
+Val Accuracy: 0.8795624253570392
+Train Epoch: 28, loss: 0.16334
+Val Epoch: 28, val_loss: 0.49101
+Train Accuracy: 0.9427784577723378
+Val Accuracy: 0.8643070489987108
+Train Epoch: 29, loss: 0.16399
+Val Epoch: 29, val_loss: 0.47989
+Train Accuracy: 0.9415332177423643
+Val Accuracy: 0.8765681003584229
+Train Epoch: 30, loss: 0.16263
+Val Epoch: 30, val_loss: 0.37141
+Train Accuracy: 0.9416097171303692
+Val Accuracy: 0.8947057944756968
+Train Epoch: 31, loss: 0.16042
+Val Epoch: 31, val_loss: 0.59307
+Train Accuracy: 0.9418944648604936
+Val Accuracy: 0.8569295101553166
+Train Epoch: 32, loss: 0.16525
+Val Epoch: 32, val_loss: 0.44597
+Train Accuracy: 0.9408617231224274
+Val Accuracy: 0.8810035842009057
+Train Epoch: 33, loss: 0.15791
+Val Epoch: 33, val_loss: 0.42413
+Train Accuracy: 0.9439429484645185
+Val Accuracy: 0.88225059740005
+Train Epoch: 34, loss: 0.15510
+Val Epoch: 34, val_loss: 0.51904
+Train Accuracy: 0.9442489460165381
+Val Accuracy: 0.8645235961625796
+Train Epoch: 35, loss: 0.15764
+Val Epoch: 35, val_loss: 0.45405
+Train Accuracy: 0.9435222018304916
+Val Accuracy: 0.8767473117994721
+Train Epoch: 36, loss: 0.15719
+Val Epoch: 36, val_loss: 0.47033
+Train Accuracy: 0.9446526927784578
+Val Accuracy: 0.8771057347527826
+Train Epoch: 37, loss: 0.15407
+Val Epoch: 37, val_loss: 0.44662
+Train Accuracy: 0.9450351897184822
+Val Accuracy: 0.8788978494481231
+Train Epoch: 38, loss: 0.14950
+Val Epoch: 38, val_loss: 0.42421
+Train Accuracy: 0.9450734394124847
+Val Accuracy: 0.8842144563633908
+Train Epoch: 39, loss: 0.15380
+Val Epoch: 39, val_loss: 0.40373
+Train Accuracy: 0.9460296817625459
+Val Accuracy: 0.8843936678756522
+Train Epoch: 40, loss: 0.15470
+Val Epoch: 40, val_loss: 0.54632
+Train Accuracy: 0.9435009520085964
+Val Accuracy: 0.8644190561671695
+Train Epoch: 41, loss: 0.15428
+Val Epoch: 41, val_loss: 0.47436
+Train Accuracy: 0.943981198158521
+Val Accuracy: 0.8645385304374649
+Train Epoch: 42, loss: 0.15426
+Val Epoch: 42, val_loss: 0.51794
+Train Accuracy: 0.9437516999945063
+Val Accuracy: 0.8719534050036787
+Train Epoch: 43, loss: 0.15061
+Val Epoch: 43, val_loss: 0.46881
+Train Accuracy: 0.9462974296205631
+Val Accuracy: 0.8795698924588758
+Train Epoch: 44, loss: 0.14844
+Val Epoch: 44, val_loss: 0.42129
+Train Accuracy: 0.9456046851787311
+Val Accuracy: 0.8764934289127837
+Train Epoch: 45, loss: 0.14396
+Val Epoch: 45, val_loss: 0.43814
+Train Accuracy: 0.9489706582509465
+Val Accuracy: 0.8877389486545303
+Train Epoch: 46, loss: 0.14781
+Val Epoch: 46, val_loss: 0.41279
+Train Accuracy: 0.9449374405085822
+Val Accuracy: 0.88152628432038
+Train Epoch: 47, loss: 0.14289
+Val Epoch: 47, val_loss: 0.41857
+Train Accuracy: 0.9483416632748001
+Val Accuracy: 0.8824522102890334
+Train Epoch: 48, loss: 0.14132
+Val Epoch: 48, val_loss: 0.42801
+Train Accuracy: 0.9491236570269562
+Val Accuracy: 0.8874701314217444
+Train Epoch: 49, loss: 0.14303
+Val Epoch: 49, val_loss: 0.50257
+Train Accuracy: 0.9480186658506732
+Val Accuracy: 0.8790770609603845
+Train Epoch: 50, loss: 0.14451
+Val Epoch: 50, val_loss: 0.44667
+Train Accuracy: 0.9482099143206855
+Val Accuracy: 0.8840053763725709
+Train Epoch: 51, loss: 0.14129
+Val Epoch: 51, val_loss: 0.50864
+Train Accuracy: 0.9476106691389656
+Val Accuracy: 0.8789351851709427
+Train Epoch: 52, loss: 0.13791
+Val Epoch: 52, val_loss: 0.44928
+Train Accuracy: 0.9493361553188637
+Val Accuracy: 0.8697356630824373
+Train Epoch: 53, loss: 0.14105
+Val Epoch: 53, val_loss: 0.43927
+Train Accuracy: 0.9496039031768808
+Val Accuracy: 0.8823775388433942
+Train Epoch: 54, loss: 0.13935
+Val Epoch: 54, val_loss: 0.49559
+Train Accuracy: 0.9491279069767442
+Val Accuracy: 0.8690188171758162
+Train Epoch: 55, loss: 0.13187
+Val Epoch: 55, val_loss: 0.41090
+Train Accuracy: 0.9516906364749081
+Val Accuracy: 0.8857452209989942
+Train Epoch: 56, loss: 0.13598
+Val Epoch: 56, val_loss: 0.44324
+Train Accuracy: 0.9495996532270928
+Val Accuracy: 0.8738948625902976
+Train Epoch: 57, loss: 0.13700
+Val Epoch: 57, val_loss: 0.45468
+Train Accuracy: 0.9493744050128661
+Val Accuracy: 0.8765232974625545
+Train Epoch: 58, loss: 0.13855
+Val Epoch: 58, val_loss: 0.50760
+Train Accuracy: 0.9490089079449489
+Val Accuracy: 0.8683019713404073
+Train Epoch: 59, loss: 0.12785
+Val Epoch: 59, val_loss: 0.46561
+Train Accuracy: 0.9538326193390453
+Val Accuracy: 0.8681600955509655
+Train Epoch: 60, loss: 0.13825
+Val Epoch: 60, val_loss: 0.44780
+Train Accuracy: 0.9486859105208221
+Val Accuracy: 0.8857676224469284
+Train Epoch: 61, loss: 0.13461
+Val Epoch: 61, val_loss: 0.45520
+Train Accuracy: 0.9501011491989126
+Val Accuracy: 0.8802195340216943
+Train Epoch: 62, loss: 0.13348
+Val Epoch: 62, val_loss: 0.47931
+Train Accuracy: 0.9502541479749225
+Val Accuracy: 0.8761648745804562
+Train Epoch: 63, loss: 0.12835
+Val Epoch: 63, val_loss: 0.45968
+Train Accuracy: 0.9524683802772764
+Val Accuracy: 0.8782183393355338
+Train Epoch: 64, loss: 0.13137
+Val Epoch: 64, val_loss: 0.42979
+Train Accuracy: 0.9515758873929009
+Val Accuracy: 0.8838635005831291
+Train Epoch: 65, loss: 0.12752
+Val Epoch: 65, val_loss: 0.45546
+Train Accuracy: 0.9532588739290085
+Val Accuracy: 0.8795325567360562
+Train Epoch: 66, loss: 0.12767
+Val Epoch: 66, val_loss: 0.41381
+Train Accuracy: 0.9540026179871623
+Val Accuracy: 0.8846027479376845
+Train Epoch: 67, loss: 0.12492
+Val Epoch: 67, val_loss: 0.48045
+Train Accuracy: 0.955094859241126
+Val Accuracy: 0.871094683378828
+Train Epoch: 68, loss: 0.12564
+Val Epoch: 68, val_loss: 0.44343
+Train Accuracy: 0.953297123623011
+Val Accuracy: 0.8853121266712567
+Train Epoch: 69, loss: 0.12414
+Val Epoch: 69, val_loss: 0.42040
+Train Accuracy: 0.9540196178592696
+Val Accuracy: 0.8824447431159845
+Train Epoch: 70, loss: 0.12502
+Val Epoch: 70, val_loss: 0.44450
+Train Accuracy: 0.9545976132190942
+Val Accuracy: 0.879883512516318
+Train Epoch: 71, loss: 0.12510
+Val Epoch: 71, val_loss: 0.43053
+Train Accuracy: 0.9535266217870257
+Val Accuracy: 0.8765382318086522
+Train Epoch: 72, loss: 0.12533
+Val Epoch: 72, val_loss: 0.45042
+Train Accuracy: 0.9522431320630498
+Val Accuracy: 0.8721699522387597
+Train Epoch: 73, loss: 0.12171
+Val Epoch: 73, val_loss: 0.43890
+Train Accuracy: 0.9555538555691554
+Val Accuracy: 0.88225059740005
+Train Epoch: 74, loss: 0.12473
+Val Epoch: 74, val_loss: 0.47699
+Train Accuracy: 0.9536796205630355
+Val Accuracy: 0.8830047789582784
+Train Epoch: 75, loss: 0.12379
+Val Epoch: 75, val_loss: 0.47984
+Train Accuracy: 0.9536753706132476
+Val Accuracy: 0.8715352449508266
+Train Epoch: 76, loss: 0.12358
+Val Epoch: 76, val_loss: 0.45546
+Train Accuracy: 0.9548823609492186
+Val Accuracy: 0.8827956988962463
+Train Epoch: 77, loss: 0.11879
+Val Epoch: 77, val_loss: 0.45045
+Train Accuracy: 0.9556261050073724
+Val Accuracy: 0.878479689395271
+Train Epoch: 78, loss: 0.12170
+Val Epoch: 78, val_loss: 0.45831
+Train Accuracy: 0.9556643547013749
+Val Accuracy: 0.8766502389771109
+Train Epoch: 79, loss: 0.12291
+Val Epoch: 79, val_loss: 0.43337
+Train Accuracy: 0.9537348701291452
+Val Accuracy: 0.8719310035557445
+Train Epoch: 80, loss: 0.11923
+Val Epoch: 80, val_loss: 0.46802
+Train Accuracy: 0.9559703522533944
+Val Accuracy: 0.8824671445639187
+Train Epoch: 81, loss: 0.12045
+Val Epoch: 81, val_loss: 0.41794
+Train Accuracy: 0.9548823609492186
+Val Accuracy: 0.8823327359475258
+Train Epoch: 82, loss: 0.11774
+Val Epoch: 82, val_loss: 0.43274
+Train Accuracy: 0.9563570991432069
+Val Accuracy: 0.8821759259544109
+Train Epoch: 83, loss: 0.11753
+Val Epoch: 83, val_loss: 0.42602
+Train Accuracy: 0.95568560452327
+Val Accuracy: 0.8854091994936178
+Train Epoch: 84, loss: 0.12002
+Val Epoch: 84, val_loss: 0.54045
+Train Accuracy: 0.9553243574051408
+Val Accuracy: 0.8703703703703703
+Train Epoch: 85, loss: 0.11951
+Val Epoch: 85, val_loss: 0.42930
+Train Accuracy: 0.9553796069712505
+Val Accuracy: 0.8844011349774888
+Train Epoch: 86, loss: 0.11642
+Val Epoch: 86, val_loss: 0.47430
+Train Accuracy: 0.9563358493213117
+Val Accuracy: 0.8761200716845878
+Train Epoch: 87, loss: 0.11803
+Val Epoch: 87, val_loss: 0.47460
+Train Accuracy: 0.9558173534773846
+Val Accuracy: 0.8756048387381623
+Train Epoch: 88, loss: 0.11717
+Val Epoch: 88, val_loss: 0.43265
+Train Accuracy: 0.9558768529932823
+Val Accuracy: 0.8776956392160595
+Train Epoch: 89, loss: 0.11546
+Val Epoch: 89, val_loss: 0.46077
+Train Accuracy: 0.9567778457772338
+Val Accuracy: 0.875769115904326
+Train Epoch: 90, loss: 0.11314
+Val Epoch: 90, val_loss: 0.43226
+Train Accuracy: 0.9564718482252142
+Val Accuracy: 0.895362903211564
+Train Epoch: 91, loss: 0.11930
+Val Epoch: 91, val_loss: 0.39147
+Train Accuracy: 0.9558386032992798
+Val Accuracy: 0.8837141576918507
+Train Epoch: 92, loss: 0.11378
+Val Epoch: 92, val_loss: 0.48581
+Train Accuracy: 0.9570073439412484
+Val Accuracy: 0.876112604511539
+Train Epoch: 93, loss: 0.11449
+Val Epoch: 93, val_loss: 0.46363
+Train Accuracy: 0.957389840881273
+Val Accuracy: 0.8866114097968937
+Train Epoch: 94, loss: 0.11188
+Val Epoch: 94, val_loss: 0.45537
+Train Accuracy: 0.9581165850673194
+Val Accuracy: 0.8779868578255675
+Train Epoch: 95, loss: 0.11700
+Val Epoch: 95, val_loss: 0.48350
+Train Accuracy: 0.9555921052631579
+Val Accuracy: 0.8778599163822234
+Train Epoch: 96, loss: 0.11240
+Val Epoch: 96, val_loss: 0.44167
+Train Accuracy: 0.9581123351175316
+Val Accuracy: 0.8782930107811731
+Train Epoch: 97, loss: 0.11195
+Val Epoch: 97, val_loss: 0.45576
+Train Accuracy: 0.9582695838433293
+Val Accuracy: 0.8749327957274097
+Train Epoch: 98, loss: 0.11312
+Val Epoch: 98, val_loss: 0.44771
+Train Accuracy: 0.9581930844553244
+Val Accuracy: 0.8785170251180906
+Train Epoch: 99, loss: 0.11576
+Val Epoch: 99, val_loss: 0.49600
+Train Accuracy: 0.9564888480973215
+Val Accuracy: 0.8741114098253786
