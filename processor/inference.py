@@ -52,14 +52,14 @@ import mediapipe as mp
 # re_arrange_pose = [2,4,6,1,3,5,8,10,12,7,9,11,0]
 video = WebcamStream(stream_id = 0)
 video.get_size()
-process = ProcessQueue()
-visualize = Visualize()
+# process = ProcessQueue()
+# visualize = Visualize()
 video.start()
-process.start()
-visualize.start()
+# process.start()
+# visualize.start()
 video.join()
-process.join()
-visualize.join()
+# process.join()
+# visualize.join()
 
 # while True :
 #     # if video.stopped is True :
