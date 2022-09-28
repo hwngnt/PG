@@ -1,5 +1,4 @@
 import multiprocessing
-import queue
 import cv2
 import time
 from queue import Queue
@@ -16,22 +15,27 @@ import torch
 mp_drawing = mp.solutions.drawing_utils
 mp_pose = mp.solutions.pose
 
-def get_frame(q1, q2):
+def get_frame(q1, q2, width, height):
     count = 0
     video = cv2.VideoCapture(0)
+    width      = int(video.get(cv2.CAP_PROP_FRAME_WIDTH))
+    height     = int(video.get(cv2.CAP_PROP_FRAME_HEIGHT))
+    print(width, height)
     while True :
+        start = time.time()
         grabbed, frame = video.read()
         q1.put(frame)
         count += 1
-        print("[1] Push success", q1.qsize())
+        # print("[1] Push success", q1.qsize())
+        end = time.time()
+        print('[1] time:', end - start)
         if count == 90:
-            Stop = True
             break
+        
     video.release()
     cv2.destroyAllWindows()
 
 def processing(q1, q2, lm_list):
-    # print("=============================HEHE========================================")
     keypoints = np.zeros((33), dtype=int)
     keypoints[0] = 1
     keypoints[11] = 1
@@ -53,13 +57,10 @@ def processing(q1, q2, lm_list):
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     model = torch.load('../checkpoints/pg_distance.pth')
     while True:
-        # print(q1.qsize())
         if q1.empty() is False:
-        # if Q1.empty() is False:
-            # print("[2]", q1.qsize())
+            start = time.time()
             with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as pose:
                 frame = q1.get()
-                print('[2] Q1',q1.qsize())  
                 x_list = []
                 y_list = []
                 temp = []
@@ -86,20 +87,17 @@ def processing(q1, q2, lm_list):
                     new_pose[0].append(round(temp[0][i], 4))
                     new_pose[1].append(round(temp[1][i], 4))
 
-                # print(lm_list)
                 lm_list.append(new_pose)
-                # # print(lm_list)
                 new_pose = [[],[]]
                 temp = []
                 x_list = []
                 y_list = []
                 
                 if len(lm_list) == window:
-                    # print('lm_list',len(lm_list))
                     landmark = lm_list
                     landmark = np.array(landmark)
                     vote = [0,0,0,0,0,0,0,0,0]
-                    # print(landmark.shape)
+                    
                     for i in range(0, len(landmark) - time_steps + 1, stride):
                         frames_X = []
                         frames_Y = []
@@ -108,7 +106,7 @@ def processing(q1, q2, lm_list):
                             frames_Y.append(landmark[j][1][:])
                         sample = [frames_X, frames_Y]
                         sequence = np.array(sample)
-                        # print("{}->{}".format(i, i+time_steps))
+                        
                         sequence = np.expand_dims(sequence, axis = 0)
                         sequence = np.expand_dims(sequence, axis = -1)
                         sequence = torch.Tensor(sequence).to(device)
@@ -124,28 +122,57 @@ def processing(q1, q2, lm_list):
                     print('[2] q2',q2.qsize())
                 else:
                     vote = None
+                if q1.empty() is True:
+                    break
+            end = time.time()
 
-def visualize(q1, q2, lm_list):
+            # print('[2] q1 size:', q1.qsize())
+            print('[2] time:', end -start)
+def visualize(q1, q2, lm_list, width, height):
     action = ["Do Nothing", "Stop", "Move Straight", "Left turn", "Left turn waiting", "Right turn", "Lane Changing", "Slow down", "Pull over"]
-    # time.sleep(1)
+    
     while True:
         if q2.empty() is False:
+            start = time.time()
             lm                = lm_list[-1][:]
-            frame             = q2.get()         
-            print("==============================")
+            frame             = q2.get()
+            font                   = cv2.FONT_HERSHEY_SIMPLEX
+            position               = (10,100)
+            fontScale              = (width * height) / (700 * 700)
+            fontColor              = (255,0,0)
+            thickness              = 2
+            lineType               = 3
+            
+            frame = draw_keypoints(frame, lm, width, height)
+            frame = draw_connection(frame, lm, width, height)
+
             print('[3] q2:',q2.qsize())
+            cv2.imshow('frame' , frame)
+            key = cv2.waitKey(1)
+            if key == ord('q'):
+                q1 = Queue()
+                break
+            if q2.empty() is True and q1.empty() is True:
+                break
+            end = time.time()
+            print('[3] time:', end-start)
         # else:
-            # print('[3] q2 is empty',q1.qsize())
-            # break
+        #     continue
 
 if __name__ == "__main__":
     q1 = multiprocessing.Queue()
     q2 = multiprocessing.Queue()
+
     manager = multiprocessing.Manager()
     lm_list = manager.list()
-    t1 = multiprocessing.Process(target=get_frame, args=(q1, q2))
+    ns = manager.Namespace()
+    ns.width = 0
+    ns.height = 0    
+
+
+    t1 = multiprocessing.Process(target=get_frame, args=(q1, q2, ns.width, ns.height))
     t2 = multiprocessing.Process(target=processing, args=(q1, q2, lm_list))
-    t3 = multiprocessing.Process(target=visualize, args=(q1, q2, lm_list))
+    t3 = multiprocessing.Process(target=visualize, args=(q1, q2, lm_list, ns.width, ns.height))
 
     t1.start()
     t2.start()
@@ -160,4 +187,3 @@ if __name__ == "__main__":
     t1.join()
     t2.join()
     t3.join()
-
